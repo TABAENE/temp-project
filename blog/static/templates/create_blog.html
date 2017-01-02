@@ -1,0 +1,10 @@
+<form ng-submit="addBlog()">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" maxlength="2000" id="comment" ng-model="blog.comment"></textarea>
+    </div>
+    <!--User name : {{ request.user.get_username }}-->
+    <!--<input type="hidden" name="author" id="author" ng-model="blog.author" value="haque"/>-->
+<input type="submit" class="btn btn-primary" value=" Post Your Comment "/>
+<a href="#/blog" class="btn btn-primary">Cancel</a>
+</form>

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block notification_container %}
+{% if not request.user.is_authenticated %}
+<div class="alert alert-info alert-dismissable">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  Please log in to create blog.
+</div>
+{% endif %}
+{% endblock %}
