@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'crispy_forms',
     'blog',
     'rest_framework',
+    'quiz.python_quiz',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,7 +61,8 @@ ROOT_URLCONF = 'newsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'newsite/templates'), os.path.join(BASE_DIR, 'blog')],
+        'DIRS': [os.path.join(BASE_DIR, 'newsite/templates'), os.path.join(BASE_DIR, 'blog'),
+                 os.path.join(BASE_DIR, 'quiz')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="centered container">
+<table class="table">
+  <tr>
+          <td><p>1. What is Python ?</p>
+<div class="radio">
+                  <label><input type="radio" name="optradio1">Language
+                  </label>
+              </div>
+<div class="radio">
+                  <label><input type="radio" name="optradio1">Platform
+                  </label>
+              </div>
+              <div id="ans" class="collapse">
+                <p>A</p>
+              </div>
+              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#ans">Show Answer</button>
+            </td>
+          </tr>
+  <tr>
+          <td><p>1. What is Python ?</p>
+<div class="radio">
+                  <label><input type="radio" name="optradio2">Language
+                  </label>
+              </div>
+<div class="radio">
+                  <label><input type="radio" name="optradio2">Platform
+                  </label>
+              </div>
+              <div id="ans2" class="collapse">
+                <p>A</p>
+              </div>
+              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#ans2">Show Answer</button>
+            </td>
+          </tr>
+</table>
+
+<button type="button" class="btn btn-success">Submit Answer</button>
+
+ <ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+
+</div>
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "css/quiz.css" %}">
+
+{% endblock %}
